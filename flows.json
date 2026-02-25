@@ -48,11 +48,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
+        "x": 340,
         "y": 160,
         "wires": [
             [
-                "940c5dee94c69803"
+                "65e52d4ca842c4e6"
             ]
         ]
     },
@@ -68,8 +68,28 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
+        "x": 640,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "65e52d4ca842c4e6",
+        "type": "function",
+        "z": "4e98dff20cf7b1f3",
+        "name": "function 2",
+        "func": "msg.payload = \"Hello\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "940c5dee94c69803"
+            ]
+        ]
     }
 ]
