@@ -1,1 +1,75 @@
-[]
+[
+    {
+        "id": "4e98dff20cf7b1f3",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b8a375913a3a761a",
+        "type": "inject",
+        "z": "4e98dff20cf7b1f3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "f4dbc744cb23eef1"
+            ]
+        ]
+    },
+    {
+        "id": "f4dbc744cb23eef1",
+        "type": "function",
+        "z": "4e98dff20cf7b1f3",
+        "name": "function 1",
+        "func": "msg = \"Hello World\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "940c5dee94c69803"
+            ]
+        ]
+    },
+    {
+        "id": "940c5dee94c69803",
+        "type": "debug",
+        "z": "4e98dff20cf7b1f3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 160,
+        "wires": []
+    }
+]
