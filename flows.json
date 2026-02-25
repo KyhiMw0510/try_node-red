@@ -41,7 +41,7 @@
         "type": "function",
         "z": "4e98dff20cf7b1f3",
         "name": "function 1",
-        "func": "msg = \"Hello World\";\nreturn msg;",
+        "func": "msg.payload = \"Hello World\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
